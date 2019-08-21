@@ -1,2 +1,2 @@
 # gitment
- Welcome to ![blog]chemlez.github.io
+ Welcome to ![blog](chemlez.github.io)
