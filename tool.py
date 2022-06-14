@@ -31,7 +31,7 @@ def list_img_file(directory):
     new_list = []
     for filename in old_list:
         name, fileformat = filename.split(".")
-        if fileformat.lower() == "jpg" or fileformat.lower() == "png" or fileformat.lower() == "gif":
+        if fileformat.lower() == "jpeg" or fileformat.lower() == "jpg" or fileformat.lower() == "png" or fileformat.lower() == "gif":
             new_list.append(filename)
     # print new_list
     return new_list
@@ -135,7 +135,7 @@ def handle_photo():
 
     list_info = SortDict(list_info)
     final_dict = {"list": list_info}
-    with open("E:/blog/source/photos/data.json", "w") as fp:
+    with open("./data.json", "w") as fp:
         json.dump(final_dict, fp)
 
 
